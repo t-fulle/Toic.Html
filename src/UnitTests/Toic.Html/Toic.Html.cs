@@ -7,10 +7,9 @@ using Xunit;
 using System.Globalization;
 using System.IO;
 using System.Collections;
-using Negatic.WebScrapping;
 using HtmlAgilityPack;
 
-namespace HtmlAgilityPack_Elu
+namespace Toic.Html
 {
     public class HtmlAgilityPack_Elu
     {

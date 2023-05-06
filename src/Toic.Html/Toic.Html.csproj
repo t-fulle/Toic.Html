@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\Toic.props" Condition="Exists('..\\..\\Toic.props')" />
+
+    <PropertyGroup>
+        <Product>Toic.Html</Product>
+        <RootNamespace>Toic.Html</RootNamespace>
+        <Version>0.1.0</Version>
+
+        <OutputType>Exe</OutputType>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+    </ItemGroup>
+
+    <Import Project="..\..\Toic.targets" Condition="Exists('..\\..\\Toic.targets')" />
+</Project>

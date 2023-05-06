@@ -1,0 +1,7 @@
+<Project>
+    <!-- Toic.Directory.Build.props Version 0.1.0 -->
+    <PropertyGroup>
+        <BaseIntermediateOutputPath>..\..\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+        <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)</MSBuildProjectExtensionsPath>
+    </PropertyGroup>
+</Project>

@@ -1,0 +1,15 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<!-- Toic.targets Version 0.1.0 -->
+
+    <PropertyGroup Label="General">
+        <UseWPF Condition=" $(TargetFramework.Contains('-windows')) ">true</UseWPF>
+
+        <OutputPath>..\..\bin\$(Product)\$(Configuration)</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Label="RepositorySpecific">
+        <Authors>Thomas Fulle</Authors>
+        <PackageProjectUrl>ADD_GITHUB_URL</PackageProjectUrl>
+        <RepositoryUrl>$(PackageProjectUrl).git</RepositoryUrl>
+    </PropertyGroup>
+</Project>

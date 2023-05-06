@@ -30,7 +30,7 @@ namespace HtmlNodeExtensions
 
         [Theory]
         [MemberData(nameof(SplitAtHtmlParagraphBreak_TestData))]
-        public void SplitAtHtmlParagraphBreak_ShouldSplitStringAtParagraphBreaks(string text, string[] expected)
+        public void SplitAtHtmlParagraphBreak_Test(string text, string[] expected)
         {
             // Act
             var result = HtmlHelper.SplitAtHtmlParagraphBreak(text);

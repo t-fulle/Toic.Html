@@ -5,11 +5,22 @@
         <UseWPF Condition=" $(TargetFramework.Contains('-windows')) ">true</UseWPF>
 
         <OutputPath>..\..\bin\$(Product)\$(Configuration)</OutputPath>
+        
+        <PackageReadmeFile>..\..\README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <PropertyGroup Label="RepositorySpecific">
         <Authors>Thomas Fulle</Authors>
-        <PackageProjectUrl>ADD_GITHUB_URL</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/t-fulle/Toic.Html</PackageProjectUrl>
         <RepositoryUrl>$(PackageProjectUrl).git</RepositoryUrl>
     </PropertyGroup>
+
+    <!-- Enables automatic NuGet push after packaging in Release mode. --><!--
+    <Target Name="PostBuildRelease" AfterTargets="Pack" Condition="'$(NuGetSourceRelease)' != '' And '$(Configuration)' == 'Release'">
+        <Exec Command="$(NuGetPath)nuget.exe push $(ProjectDir)bin\$(Configuration)\$(ProjectName).$(PackageVersion).nupkg -Source &quot;$(NuGetSourceRelease)&quot; -Verbosity Detailed" />
+    </Target>-->
+
+    <!--<Target Name="PostPackNugetDeploy" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+        <Exec Command="S:\.NuGets\"$(OutputPath)$(PackageId).$(PackageVersion).nupkg=""\" -source \\\\Server\\Packages" />
+    </Target>-->
 </Project>

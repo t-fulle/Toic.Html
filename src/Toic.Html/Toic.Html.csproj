@@ -6,10 +6,14 @@
         <Product>Toic.Html</Product>
         <RootNamespace>Toic.Html</RootNamespace>
         <Version>0.1.0</Version>
+    </PropertyGroup>
 
-        <!--<OutputType>Exe</OutputType>-->
-
-        <IsPackable>false</IsPackable>
+    <PropertyGroup>
+        <Description>Html extensions and methods for ease of use</Description>
+        <PackageReleaseNotes>
+            0.1.0   - Initial release
+        </PackageReleaseNotes>
+        <PackageTags>vcore;core</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

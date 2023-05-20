@@ -13,7 +13,6 @@ namespace Toic.Html
     public static class HtmlHelper
     {
         #region Constants
-
         /// <summary>
         /// Regular expression for matching HTML line breaks.
         /// </summary>
@@ -23,11 +22,9 @@ namespace Toic.Html
         /// Regular expression for matching HTML paragraph breaks.
         /// </summary>
         public static readonly Regex HTML_PARAGRAPH = new Regex(@"(?:<\s*/?\s*br\s*/?>){2,}", RegexOptions.Compiled);
-
         #endregion
 
         #region Methods
-
         /// <summary>
         /// Determines whether the specified text contains an HTML line break.
         /// </summary>
@@ -55,7 +52,6 @@ namespace Toic.Html
         /// <param name="text">The text to split.</param>
         /// <returns>An array of strings that were split at each occurrence of an HTML paragraph break.</returns>
         public static string[] SplitAtHtmlParagraphBreak(string text) => HTML_PARAGRAPH.Split(text);
-
         #endregion
     }
 }

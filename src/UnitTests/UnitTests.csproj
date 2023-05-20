@@ -4,7 +4,7 @@
 
     <PropertyGroup>
         <Product>UnitTests</Product>
-
+        
         <IsPackable>false</IsPackable>
         <NoWarn>1701;1702;CS1591</NoWarn>
     </PropertyGroup>
@@ -16,7 +16,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Toic.Html\Toic.Html.csproj" />
+      <ProjectReference Include="..\Toic.Core\Toic.Core.csproj" />
+      <!--<ProjectReference Include="..\Toic.WebBrowser\Toic.WebBrowser.csproj" />-->
+      <ProjectReference Include="..\Toic.WebScrapping\Toic.WebScrapping.csproj" />
     </ItemGroup>
 
     <Import Project="..\..\Toic.targets" Condition="Exists('..\\..\\Toic.targets')" />

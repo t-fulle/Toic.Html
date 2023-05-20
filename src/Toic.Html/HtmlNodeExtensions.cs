@@ -14,7 +14,9 @@ namespace Toic.Html
     {
         public static HtmlNodeCollection SelectParagraphNodes(this HtmlNode node)
             => node.SelectNodes("//p[not(.//p)]");
-            //=> node.SelectNodes("//p[not(.//p)]");
+        //=> node.SelectNodes("//p[not(.//p)]");
+
+
 
 
         //The XPath to the innermost<p> element would be //p[not(.//p)]. This selects all <p> elements that do not have any <p> elements as descendants. Is there anything else you would like to know about XPath?

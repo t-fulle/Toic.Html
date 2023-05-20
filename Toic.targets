@@ -6,7 +6,7 @@
 
         <OutputPath>..\..\bin\$(Product)\$(Configuration)</OutputPath>
         
-        <PackageReadmeFile>..\..\README.md</PackageReadmeFile>
+        <!--<PackageReadmeFile>..\..\README.md</PackageReadmeFile>-->
     </PropertyGroup>
 
     <PropertyGroup Label="RepositorySpecific">

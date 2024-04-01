@@ -1,0 +1,14 @@
+<Project>
+    <Import Project="sub\Toic.Shared\Toic.Shared.Pre.targets" />
+
+    
+    
+    <PropertyGroup>
+        <Authors>Thomas Fulle</Authors>
+        <PackageProjectUrl>https://github.com/t-fulle/Toic.Html</PackageProjectUrl>
+    </PropertyGroup>
+
+    
+    
+    <Import Project="sub\Toic.Shared\Toic.Shared.Post.targets" />
+</Project>

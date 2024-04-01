@@ -1,0 +1,3 @@
+[submodule "sub/Toic.Shared"]
+	path = sub/Toic.Shared
+	url = https://github.com/t-fulle/Toic.Shared

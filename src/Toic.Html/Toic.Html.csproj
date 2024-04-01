@@ -1,16 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\Toic.props" Condition="Exists('..\\..\\Toic.props')" />
 
     <PropertyGroup>
         <Product>Toic.Html</Product>
         <RootNamespace>Toic.Html</RootNamespace>
-        <Version>0.1.1.1</Version>
     </PropertyGroup>
 
     <PropertyGroup>
         <Description>Html extensions and methods for ease of use</Description>
         <PackageReleaseNotes>
+            0.2.0   - Build configuration overhaul
             0.1.0   - Initial release
         </PackageReleaseNotes>
         <PackageTags>vcore;core</PackageTags>
@@ -19,6 +18,4 @@
     <ItemGroup>
         <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
     </ItemGroup>
-
-    <Import Project="..\..\Toic.targets" Condition="Exists('..\\..\\Toic.targets')" />
 </Project>

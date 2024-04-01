@@ -1,7 +1,14 @@
 <Project>
-    <!-- Toic.Directory.Build.props Version 0.1.0 -->
+    <Import Project="sub\Toic.Shared\Toic.Shared.Pre.props" />
+    
+     
+    
     <PropertyGroup>
-        <BaseIntermediateOutputPath>..\..\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
-        <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)</MSBuildProjectExtensionsPath>
+        <TargetFrameworks>$(DotNet)</TargetFrameworks>
+        <Version>0.2.0</Version>
     </PropertyGroup>
+
+    
+    
+    <Import Project="sub\Toic.Shared\Toic.Shared.Post.props" />
 </Project>

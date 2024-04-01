@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\Toic.props" Condition="Exists('..\\..\\Toic.props')" />
-
+    
     <PropertyGroup>
         <Product>UnitTests</Product>
         
@@ -20,6 +19,4 @@
       <!--<ProjectReference Include="..\Toic.WebBrowser\Toic.WebBrowser.csproj" />-->
       <ProjectReference Include="..\Toic.WebScrapping\Toic.WebScrapping.csproj" />
     </ItemGroup>
-
-    <Import Project="..\..\Toic.targets" Condition="Exists('..\\..\\Toic.targets')" />
 </Project>
